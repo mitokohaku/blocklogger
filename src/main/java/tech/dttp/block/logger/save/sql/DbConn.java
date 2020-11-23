@@ -86,7 +86,7 @@ public class DbConn {
                 runner.fillParameter("player", getPlayerUuid(player));
             }
             else{
-                runner.fillParameter("player", null);
+                runner.fillParameter("player", (Object)null);
             }
             runner.fillParameter("time", time);
 
@@ -185,6 +185,7 @@ public class DbConn {
             // Repeat for every entry
             while (rs.next()) {
                 //Get the info from the database and return
+                PrintToChat.print(scs.getPlayer(), "At "+rs.getInt("x")+" "+rs.getInt("y")+" "+rs.getInt("z"), Formatting.AQUA);
                 PrintToChat.prepareInteractionsPrint(toStringMap(rs,
                         "x", "y", "z", "state", "dimension", "type", "player", "time"), sourcePlayer);
             }

@@ -1,7 +1,6 @@
 package tech.dttp.block.logger.mixin;
 
 import com.mojang.authlib.GameProfile;
-import net.minecraft.block.ChestBlock;
 import net.minecraft.block.entity.LockableContainerBlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.screen.NamedScreenHandlerFactory;
