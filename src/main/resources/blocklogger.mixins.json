@@ -11,7 +11,9 @@
   ],
   "server": [
     "BlockBreakMixin",
-    "BlockPlaceMixin"
+    "BlockPlaceMixin",
+    "BlockUseMixin",
+    "ChestBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
