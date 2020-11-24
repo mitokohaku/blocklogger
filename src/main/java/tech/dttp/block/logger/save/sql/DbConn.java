@@ -80,7 +80,12 @@ public class DbConn {
         try {
             runner.fillParameter("type", type.name());
             runner.fillParameter("pos", pos.getX(), pos.getY(), pos.getZ());
-            runner.fillParameter("dimension", PlayerUtils.getPlayerDimension(player));
+            if(isPlayer){
+                runner.fillParameter("dimension", PlayerUtils.getPlayerDimension(player));
+            }
+            else{
+                runner.fillParameter("dimension", "minecraft:overworld");
+            }
             runner.fillParameter("state", state.toString().replace("Block{", "").replace("}", ""));
             if(isPlayer){
                 runner.fillParameter("player", getPlayerUuid(player));

@@ -5,15 +5,15 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "ScreenHandlerMixin",
-    "ServerPlayerEntityMixin"
+    "ServerPlayerEntityMixin",
+    "ChestBlockMixin"
   ],
   "client": [
   ],
   "server": [
     "BlockBreakMixin",
     "BlockPlaceMixin",
-    "BlockUseMixin",
-    "ChestBlockMixin"
+    "BlockUseMixin"
   ],
   "injectors": {
     "defaultRequire": 1

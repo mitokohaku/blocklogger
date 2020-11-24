@@ -1,12 +1,8 @@
 package tech.dttp.block.logger.command;
 
-import com.mojang.authlib.GameProfile;
-import com.mojang.brigadier.Command;
-import com.mojang.brigadier.SingleRedirectModifier;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.brigadier.tree.LiteralCommandNode;
-import net.fabricmc.fabric.api.event.player.AttackBlockCallback;
 import net.minecraft.command.argument.BlockPosArgumentType;
 import net.minecraft.command.argument.DimensionArgumentType;
 import net.minecraft.server.command.CommandManager;
@@ -16,8 +12,6 @@ import net.minecraft.util.math.BlockPos;
 import tech.dttp.block.logger.InspectModeHandler;
 import tech.dttp.block.logger.save.sql.DbConn;
 import tech.dttp.block.logger.util.PlayerUtils;
-
-import java.util.UUID;
 
 public class InspectCommand {
     boolean defaultDim;
