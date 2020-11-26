@@ -29,15 +29,17 @@ There are multiple in game commands to help with reading a database
 ##### /bl inspect
 When provided a BlockPos argument, this command prints the latest 10 interactions from the database to chat
 When no argument given, this command toggles inspect mode. Whenever a player with inspect mode attacks a block, the database entries for it are given
+
 Requires permission level 3+
 
 ##### /bl search
 A query builder in a command. You can specify many parameters and an SQL query is built and executed, with the results printed to chat
+
 Requires permission level 3+
 
 ##### /bl sql
 An experimental command to allow custom queries to be entered from an in game command
-Runs on a different thread to help reduce lag
+
 Requires permission level 4+
 
 ### v0.2.x
