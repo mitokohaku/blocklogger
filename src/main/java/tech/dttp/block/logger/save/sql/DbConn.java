@@ -132,7 +132,13 @@ public class DbConn {
 
     public static String getDisplayName(UUID uuid) {
         MinecraftServer server = DbConn.server;
-        String name = server.getUserCache().getByUuid(uuid).getName();
+        String name;
+        if(uuid==null){
+            name = "A block";
+        }
+        else{
+            name = server.getUserCache().getByUuid(uuid).getName();
+        }
         return name;
     }
 
@@ -288,7 +294,7 @@ public class DbConn {
             PreparedStatement ps = con.prepareStatement(query);
             ResultSet rs = ps.executeQuery();
             while(rs.next()){
-                PrintToChat.print(player, rs.getString("type")+" "+rs.getInt("x")+ " " + rs.getInt("y")+" "+rs.getInt("z")+" "+getDisplayName(getUuid(rs.getString("player")))+" "+rs.getString("time"), Formatting.AQUA);
+                PrintToChat.print(player, rs.getString("type")+" "+rs.getInt("x")+ " " + rs.getInt("y")+" "+rs.getInt("z")+" "+getDisplayName(getUuid(rs.getString("player")))+" "+rs.getString("time"), Formatting.DARK_AQUA);
             }
         }
         catch(SQLException e){
