@@ -1,5 +1,5 @@
 # Blocklogger
-A block change logging tool for the Fabric mod loader. Part of the FabricAdmin suite of tools. Blocklogger is being merged with WatchTower, please see the new repo at github.com/fabricservertools/deltalogger
+A block change logging tool for the Fabric mod loader. Part of the FabricAdmin suite of tools. Blocklogger is being merged with WatchTower, please see the new repo at [github.com/fabricservertools/deltalogger](github.com/fabricservertools/deltalogger)
 #### Join the discord at https://discord.gg/UxHnDWr
 ## Todo
 - [ ] Rollbacks
